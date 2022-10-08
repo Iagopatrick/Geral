@@ -1,0 +1,177 @@
+:root{
+    --Orange: #D2872C;
+    --Gray: #766F68;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+* {
+    margin:1;    
+    padding: 1;
+     box-sizing: border-box;
+  }
+
+  /* Header ======================== */
+header{
+display: flex;    
+align-items: center;
+justify-content: space-between;
+padding: 0 2rem;
+}
+
+ul{
+list-style: none;
+display: flex;
+}
+.mobile-menu{
+    display: none;
+}
+
+.line-menu-button{
+    display: block;
+    height: 4px;
+    width: 18px;
+    margin: 2px 0;
+    background-color: var(--Gray);
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+
+h1{
+color: var(--Orange);
+font-weight: bold;
+
+display: inline;
+
+}
+
+.options{
+    margin: 0 0 12px 0;
+   display: inline;
+    
+
+
+}
+
+.home{
+    text-decoration: none;
+    color: var(--Gray);
+    padding-right: 12px;
+}
+
+.features{
+    text-decoration: none;
+    color: var(--Gray);
+    padding-right: 12px;
+}
+
+.contact{
+    text-decoration: none;
+    color: var(--Gray);
+}
+/* body ======================== */
+
+main{
+    position: relative;
+    padding: 0 2rem;
+}
+
+.text{
+    max-width: 40%;
+
+}
+
+.frase{
+    color: var(--Gray);
+    font-size: 3.5rem;
+    font-weight: bolder;
+    
+}
+
+.description{
+    color: var(--Gray);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.image{ 
+background-size: contain;
+max-width: 60%;
+z-index: -1;
+position: absolute;
+top: 0;
+right: 5.5rem;
+}
+
+img{
+ width: 100%;   
+}
+/* button ======================== */
+.button{
+    width: 15rem;
+    height: 3.5rem;
+    border: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: var(--Orange);
+    font-size: 1.3rem;
+    border-radius: 0.5rem;
+    color: white;
+    font-weight: bolder;
+    margin-left: 2rem;
+
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+button:hover{
+    transform: scale(1.1, 1.1);
+}
+
+@media(max-width: 1024px){
+    html{
+        font-size: 93.75%;
+    }
+}
+
+@media(max-width: 728px){
+    html{
+        font-size: 87.5%;
+    }
+}
+
+@media(max-width: 500px){
+    html{
+        font-size: 60.5%;
+    }
+
+  main{
+        display: grid;
+        grid-template-columns: 1fr;
+        position: static;
+  }
+    .image{
+        position: static;
+        order: 1;
+        max-width: 100%;
+    }
+    .text{
+        max-width: 100%;
+        order: 2;
+    }
+    .button{
+        display: block;
+        margin: 0 auto;
+    }
+    .options{
+        display: none;
+    }
+    .mobile-menu{
+        display: block;
+        transition: transform 0.2s;
+        cursor: pointer;
+    }
+    .mobile-menu:hover{
+        transform: scale(1.2, 1.2);
+    }
+}

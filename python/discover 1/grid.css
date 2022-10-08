@@ -1,0 +1,113 @@
+/* GRID
+Posso colocar aonde quiser na divisão
+O flexbox complementa o Grid e vice-versa.
+Cuidado se algum navegador não aceita o grid
+
+PROPRIEDADES:
+-Container:
+display:grid; seleciona ele como grid
+grid-template-columns; quantas fatias em colunas
+grid-template-rows; quantas fatias em linhas
+grid-gap; espaçamento
+    grid-row-gap
+    grid-column-gap
+grid-template-areas; delimita areas
+
+item:
+grid-column; aonde fica o item na coluna
+    grid-column-start 
+    grid-column-end
+grid-row; aonde fica na linha
+    grid-row-start
+    grid-row-end
+grid-area; aonde fica na área
+
+
+alinhamento:
+justify-content aplicado no contect geral
+align-content
+justify-items aplicado noss itens
+align-items
+justify-self aplicado diretamente
+align-self
+
+!!!! JUSTIFY EIXO X 
+ALIGN EIXO Y !!!
+
+1justify-content align-content - posso alinhar eles aonde quiser 
+podemos usar:
+start
+end
+center
+space-between
+space-around
+space-evenly
+2
+3
+*/
+/*
+html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #7159c1;
+}
+
+header{
+    background: yellow;
+    grid-area: h;
+    
+    
+}
+main{
+    background: blue;
+    grid-area: m;
+   
+}
+aside{
+    background: green;
+    
+    grid-area: a;
+}
+footer{
+    background: red;
+    grid-area: f;
+}
+
+
+.container{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 20vh 70vh 10vh;
+    grid-template-areas: "h h"
+    "m a"
+    "f f"
+}
+*/
+
+
+html, body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+.container{
+    background: black;
+    height: 100vw;
+    width: 100vh;
+
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 5px;
+
+    
+    
+}
+.container > div{
+    background: #7159c1;
+    height: 50%;
+    width: 50%;
+}

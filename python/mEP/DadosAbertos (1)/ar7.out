@@ -1,0 +1,9 @@
+   | x | o 
+---+---+---
+ o | x | x 
+---+---+---
+   | O | o 
+Entrada invalida!
+
+cmd /c 'python mEP5.py < arq8.in > arq8.out'
+cmd /c 'python ex7.py < ex7.tx > arq.out'

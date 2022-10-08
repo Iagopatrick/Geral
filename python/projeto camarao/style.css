@@ -1,0 +1,76 @@
+
+/* Global ======================== */
+
+*{  margin:0;    
+    padding: 0;
+     box-sizing: border-box;
+    }
+/* Global ======================== */
+
+
+
+
+/* Header ======================== */
+
+
+header{
+   
+    background-color:#FA8072 ;
+    text-align: center;
+    padding: 2rem 0 2rem;
+    }
+
+    .title{
+        font-family: "roboto condensed", sans-serif;
+        font-weight: 100;
+    }
+
+    /* Preciso arruamr a distancia entre os cards em determinada
+    tela.
+    Preciso colocar uma frase embaixo de cara ou colocar aquele
+    que passa o mouse emcima. </section>
+     */
+
+
+        h2{
+            text-align: center;
+        }
+   
+
+
+        .buttons{
+            text-align: center;
+            justify-content: space-between;
+            display: flex;
+            
+        }
+       /* options ======================== */
+       card{
+       margin: auto;
+        font-weight: bold;
+        background-color: #FA8072;
+        padding: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+       
+        
+       }
+    
+    card:hover{
+        color: white;
+    }
+
+       /* footer ======================== */
+       footer{
+           text-align: center;
+           padding: 4rem 0 2rem;
+           color: black;
+           font-weight: 200;
+           cursor: pointer;
+           
+         
+        
+       }
+       footer:hover{
+           color: #ff7f50;
+       }
