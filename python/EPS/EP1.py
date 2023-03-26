@@ -272,7 +272,7 @@ def maquina(hortela = 0, leitepo = 0, agua = 0, copo = 0, chocolate = 0, cafe = 
                     cappuccino -= 30
                     preço = 6.5
             print(YELLOW)        
-            d = round(pergunta("Coloque seu dinheiro: ", float), 2)
+            d = round(pergunta("Coloque seu dinheiro: ", float), 3)
             entrada(preço, d)
             dinheiro += preço # armazena o dinheiro na maquina
             geloac()
@@ -318,6 +318,6 @@ def maquina(hortela = 0, leitepo = 0, agua = 0, copo = 0, chocolate = 0, cafe = 
 
 def main():
     limpatela()
-    maquina(0, 2500, 2000, 1000, 1000, 1000, 1000)
+    maquina(2500, 2500, 2000, 1000, 1000, 1000, 1000)
     
 main()
